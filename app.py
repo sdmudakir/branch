@@ -2,10 +2,10 @@ import boto3
 
 client = boto3.client('ec2')
 response = client.run_instances(
-    ImageId='ami-0453ec754f44f9a4a',
-    InstanceType='t2.nano',
-    KeyName = 'devops',
+            ImageId='ami-0453ec754f44f9a4a',
+                InstanceType='t2',
+                    KeyName = 'devops',
 
-    MaxCount=1,
-    MinCount=1,
-)
+                        MaxCount=1,
+                            MinCount=1,
+                            )
